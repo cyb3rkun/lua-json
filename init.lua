@@ -1,4 +1,4 @@
----@diagnostic disable: unused-function, unused-local
+-- -@diagnostic disable: unused-function, unused-local
 ---@class JSON
 ---convert lua data to jsong string
 ---@field encode fun(t: table): string
@@ -68,7 +68,6 @@ local function encode_obj(t)
 			(tp == "boolean")
 			or (tp == "nil")
 			or (tp == "table")
-			or Is_array(t)
 		then
 			error("invalid type as key", 2)
 		end
