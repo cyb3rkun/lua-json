@@ -213,7 +213,9 @@ local tests = {
 	},
 }
 
+print(table.maxn)
 if arg[1] and arg[1] == "--all" then
+	print("Running Tests")
 	test.tests = tests
 	test.test_all()
 elseif arg[1] then
